@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laftel</title>
     <link rel="stylesheet" href="Web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap');
+        </style>        
     <div class="header-container">
-        <header>Laftel</header>
-        <nav>
+        <header>LAFTEL</header>
+        <nav class="main-nav">
             <ul>
                 <li><a href="/finder">태그검색</a></li>
                 <li><a href="/daily">요일별 신작</a></li>
                 <li><a href="/themes">테마추천</a></li>
                 <li><a href="/membership">멤버십</a></li>
-                <li><a href="/search">🔍</a></li>
-                <li><a href="/login">로그인/가입</a></li>
+                <li class="search"><a href="/search"><i class="fa fa-search"></i></a></li>
+                <li class="login"><a href="/login">로그인/가입</a></li>
             </ul>
         </nav>
     </div>
@@ -28,5 +38,44 @@
         </div>
     </main>
     <script src="slider.js"></script>
+    <article>
+        <div class="days"><h3>요일별 신작</h3> <button>업로드 공지</button></div>
+        <div class="day"><button>월</button>
+            <button>화</button>
+            <button>수</button>
+            <button>목</button>
+            <button>금</button>
+            <button>토</button>
+            <button>일</button>
+        </div>
+       
+    </article>
+    <div>
+        <script src="Slide.js"></script>
+        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">라프텔 인기 애니</h3>
+        
+        <div class="day-anime">
+            <figure>
+                <img src="pic/ani4.jpeg" alt="Image 4"><figcaption>나의 히어로 아카데미아 7기</figcaption>
+            </figure>
+            <figure>
+                <img src="pic/ani5.png" alt="Image 5"><figcaption>최애의 아이</figcaption>
+            </figure>
+            <figure>
+                <img src="pic/ani6.jpg" alt="Image 6"><figcaption>귀멸의 칼날: 합동 강화 훈련편</figcaption>
+            </figure>
+            <figure>
+                <img src="pic/ani7.jpg" alt="Image 7"><figcaption>나루토</figcaption>
+            </figure>
+            <figure>
+                <img src="pic/ani8.jpg" alt="Image 8"><figcaption>하이큐</figcaption>
+            </figure>
+            <!-- <figure>
+                <img src="pic/ani9.jpg" alt="Image 9"><figcaption>괴수 8호</figcaption>
+            </figure> -->
+           </div>
+           <script src="Slide.js"></script>
+    </div>
+
 </body>
 </html>
