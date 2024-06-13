@@ -12,11 +12,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 </head>
 <body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap');
-        </style>        
+        </style> 
     <div class="header-container">
         <header>LAFTEL</header>
         <nav class="main-nav">
@@ -31,13 +38,13 @@
         </nav>
     </div>
     <main>
-        <div class="slider">
+        <div class="slider-anime">
             <div class="slide"><img src="pic/ani1.jpg" alt="Image 1"></div>
             <div class="slide"><img src="pic/ani2.jpg" alt="Image 2"></div>
             <div class="slide"><img src="pic/ani3.jpg" alt="Image 3"></div>
         </div>
     </main>
-    <script src="slider.js"></script>
+    
     <article>
         <div class="days"><h3>요일별 신작</h3> <button>업로드 공지</button></div>
         <div class="day"><button>월</button>
@@ -51,16 +58,14 @@
        
     </article>
     <div>
-        <script src="Slide.js"></script>
-        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">라프텔 인기 애니</h3>
-        
+        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">라프텔 인기 애니</h3>    
         <div class="day-anime">
             <figure>
                 <img src="pic/ani4.jpeg" alt="Image 4"><figcaption>나의 히어로 아카데미아 7기</figcaption>
             </figure>
             <figure>
                 <img src="pic/ani5.png" alt="Image 5"><figcaption>최애의 아이</figcaption>
-            </figure>
+            </figure> 
             <figure>
                 <img src="pic/ani6.jpg" alt="Image 6"><figcaption>귀멸의 칼날: 합동 강화 훈련편</figcaption>
             </figure>
@@ -74,8 +79,63 @@
                 <img src="pic/ani9.jpg" alt="Image 9"><figcaption>괴수 8호</figcaption>
             </figure> -->
            </div>
-           <script src="Slide.js"></script>
     </div>
+    <script src="Slider.js"></script>
+    <article>
+        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">
+            글자가 살아 움직인다! 소설 원작 애니메이션 모음
+        </h3>
 
+        <div class="slider">
+            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
+            <div> <img src="pic/ani5.png" alt="Image 5"></div>
+            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
+            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
+            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
+            <div> <img src="pic/ani5.png" alt="Image 5"></div>
+          </div>
+    </article>  
+    <script>
+        $( document ).ready( function() {
+          $( '.slider' ).slick( {
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  arrows: false,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                }
+              }
+            ]
+          } );
+        } );
+      </script>
+      <style>
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        .slider {
+          width: 80%;
+          margin: 0px auto;
+        }
+        .slider .slick-slide {
+          margin: 10px;
+        }
+        .slick-prev:before, .slick-next:before {
+          color: #444444;
+        }
+      </style>
 </body>
 </html>
