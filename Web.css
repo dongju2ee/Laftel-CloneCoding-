@@ -14,16 +14,19 @@ body {
     padding: 10px;
     flex-wrap: wrap; /**/
 }
+.header-container header {
+    margin-left: 100px;
+}
 header {
     color: black;
     font-size: 2rem;
-    margin-left: 20px;
+    margin-left: 50px;
     font-family: "Dongle", sans-serif;
     font-weight: 800;
     font-style: bold;
 }
 .main-nav {
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 10px;
 }
 nav ul {
@@ -48,7 +51,7 @@ nav ul li a:hover {
     color: gray;
 }
 .search {
-    margin-left: 900px;
+    margin-left: 1200px;
 }
 
 .slider-anime {
