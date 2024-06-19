@@ -1,0 +1,158 @@
+
+.header-container {
+    background-color: black;
+
+}
+.header-container header {
+    color: white;
+
+}
+.main-nav a {
+    color: white;
+}
+.membership-main video {
+    border-radius: 50px;
+}
+.membership-main {
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.video {
+    margin-top: 60px;
+    margin-left: 25px;
+    filter: brightness(0.7);
+}
+
+.video video {
+    /* max-width: 100%; */
+    height: auto;
+    display: block;
+}
+
+.membership {
+    color: white;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* 시작할 때 투명도 0으로 설정 */
+}
+.membership h1 {
+    margin-top: 200px;
+    font-size: 3rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.membership h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px); /* 아래로 50px 이동 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 원래 위치로 */
+    }
+}
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: calc(200% + 10px);
+    animation: scroll 20s linear infinite;
+}
+/* .slider div {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+} */
+.slider-wrapper2 {
+    display: flex;
+    width: calc(200% + 10px);
+    animation: scroll 15s linear infinite;
+}
+.slider img {
+    width: 25vw;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.A {
+    color: white;
+    margin-left: 200px;
+    padding-top: 200px;
+    display: flex;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* 시작할 때 투명도 0으로 설정 */
+}
+.A h1 {
+    margin-top: 70px;
+    font-size: 3rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.A h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.A img {
+    width: 50vw;
+
+}
+.text-content {
+    flex: 1;
+
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: right;
+}
+
+.overlay h1 {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* 동영상 위에 나타나도록 설정 */
+    width: 100%; /* 부모 요소에 꽉 차게 설정 */
+}
+.overlay button {
+    background-color: mediumpurple;
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    border: none;
+    border-radius: 50px;
+    width: 15vw;
+    height: 7vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+}

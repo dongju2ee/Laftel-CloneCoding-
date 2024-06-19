@@ -7,7 +7,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     z-index: 10;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap; /**/
 }
 .header-container header {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 header {
     color: black;
@@ -85,7 +85,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap:wrap;
     margin-top: 10px;
-    padding-left: 10px;
+    margin-left: 50px;
     align-items: center; /* 정렬 */
 }
 .days button {
@@ -94,13 +94,18 @@ nav ul li a:hover {
     height: 3.5vh;
     border: 1px solid lightgray;
     border-radius: 5%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
 }
 .days h3 {
     margin-right: 10px;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+}
+.day {
+    margin-left: 30px;
 }
 .day button{
     width: 3vw;
@@ -110,7 +115,7 @@ nav ul li a:hover {
     background-color:lightgray;
     margin-top: 10px;
     font-size: 1rem;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .day button:hover {
     background-color: mediumpurple;
@@ -148,7 +153,6 @@ nav ul li a:hover {
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
-    /* 반 */
     header {
         font-size: 2.5rem;
         margin-left: 15px;
@@ -174,14 +178,33 @@ nav ul li a:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) { /* 반 */
+    .header-container header {
+        margin-left: 50px;
+    }
     header {
         font-size: 2rem;
-        margin-left: 20px;
     }
 
     .main-nav {
         margin-left: 40px;
+    }
+
+    .slider-anime {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    nav ul {
+        display: flex;
+    
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+    .search {
+        margin-left: 400px;
     }
 
     .days button {
@@ -222,7 +245,8 @@ nav ul li a:hover {
 .day-Anime {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    margin-left: 40px;
 }
 .day-anime {
     display: flex;

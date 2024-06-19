@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laftel</title>
+    <title>👾 라프텔</title>
     <link rel="stylesheet" href="Web.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +29,9 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="/finder">태그검색</a></li>
-                <li><a href="/daily">요일별 신작</a></li>
+                <li><a href="/Daily.html">요일별 신작</a></li>
                 <li><a href="/Themes.html">테마추천</a></li>
-                <li><a href="/membership">멤버십</a></li>
+                <li><a href="/Membership.html">멤버십</a></li>
                 <li class="search"><a href="/search"><i class="fa fa-search"></i></a></li>
                 <li class="login"><a href="/Login.html">로그인/가입</a></li>
             </ul>
@@ -58,31 +58,19 @@
        
     </article>
     <div>
-        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">라프텔 인기 애니</h3>    
-        <div class="day-anime">
-            <figure>
-                <img src="pic/ani4.jpeg" alt="Image 4"><figcaption>나의 히어로 아카데미아 7기</figcaption>
-            </figure>
-            <figure>
-                <img src="pic/ani5.png" alt="Image 5"><figcaption>최애의 아이</figcaption>
-            </figure> 
-            <figure>
-                <img src="pic/ani6.jpg" alt="Image 6"><figcaption>귀멸의 칼날: 합동 강화 훈련편</figcaption>
-            </figure>
-            <figure>
-                <img src="pic/ani7.jpg" alt="Image 7"><figcaption>나루토</figcaption>
-            </figure>
-            <figure>
-                <img src="pic/ani8.jpg" alt="Image 8"><figcaption>하이큐</figcaption>
-            </figure>
-            <!-- <figure>
-                <img src="pic/ani9.jpg" alt="Image 9"><figcaption>괴수 8호</figcaption>
-            </figure> -->
-           </div>
+        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">몸은 사라져도 머리는 그대로! - 명탐정 코난 자막 모음</h3>    
+        <div class="slider">
+          <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
+          <div> <img src="pic/ani5.png" alt="Image 5"></div>
+          <div> <img src="pic/ani6.jpg" alt="Image 4"></div>
+          <div> <img src="pic/ani7.jpg" alt="Image 4"></div>
+          <div> <img src="pic/ani8.jpg" alt="Image 4"></div>
+          <div> <img src="pic/ani9.jpg" alt="Image 5"></div>
+        </div>
     </div>
     <script src="Slider.js"></script>
     <article>
-        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 10px;">
+        <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">
             글자가 살아 움직인다! 소설 원작 애니메이션 모음
         </h3>
 
@@ -98,7 +86,7 @@
     <script>
         $( document ).ready( function() {
           $( '.slider' ).slick( {
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 1000,
             slidesToShow: 5,
             slidesToScroll: 1,
@@ -127,7 +115,7 @@
           height: auto;
         }
         .slider {
-          width: 80%;
+          width: 95%;
           margin: 0px auto;
         }
         .slider .slick-slide {

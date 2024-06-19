@@ -1,18 +1,16 @@
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 5, // Show 5 slides at a time
-    spaceBetween: 10, // Space between slides
-    navigation: {
-        nextEl: '#nextBtn',
-        prevEl: '#prevBtn',
-    },
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const sliderImages = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
 
-// Previous button click event listener
-document.getElementById('prevBtn').addEventListener('click', function () {
-    swiper.slidePrev(); // Move to the previous slide
-});
+    function slide() {
+        currentIndex++;
+        if (currentIndex >= sliderImages.length) {
+            currentIndex = 0;
+        }
+        const offset = currentIndex * -20; // -20vw씩 이동
+        sliderWrapper.style.transform = `translateX(${offset}vw)`;
+    }
 
-// Next button click event listener
-document.getElementById('nextBtn').addEventListener('click', function () {
-    swiper.slideNext(); // Move to the next slide
+    setInterval(slide, 2000); // 2초마다 슬라이드 이동
 });
