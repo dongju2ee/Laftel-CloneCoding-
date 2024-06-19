@@ -47,40 +47,44 @@
     
     <article>
         <div class="days"><h3>요일별 신작</h3> <button>업로드 공지</button></div>
-        <div class="day"><button>월</button>
-            <button>화</button>
-            <button>수</button>
-            <button>목</button>
-            <button>금</button>
-            <button>토</button>
-            <button>일</button>
+        <div class="day"><button id="mon">월</button>
+            <button id="tue">화</button>
+            <button id="wed">수</button>
+            <button id="thu">목</button>
+            <button id="fri">금</button>
+            <button id="sat">토</button>
+            <button id="sun">일</button>
+            <div id="image-container" style="margin-top: 30px; padding-left: 5px;">
+          </div>
         </div>
-       
+       <div style="margin-top: 100px;">
+        <img src="pic/label.png">
+       </div>
     </article>
     <div>
         <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">몸은 사라져도 머리는 그대로! - 명탐정 코난 자막 모음</h3>    
         <div class="slider">
-          <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
-          <div> <img src="pic/ani5.png" alt="Image 5"></div>
-          <div> <img src="pic/ani6.jpg" alt="Image 4"></div>
-          <div> <img src="pic/ani7.jpg" alt="Image 4"></div>
-          <div> <img src="pic/ani8.jpg" alt="Image 4"></div>
-          <div> <img src="pic/ani9.jpg" alt="Image 5"></div>
+          <div> <img src="pic/conan/conan1.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 9기: 수평선상의 음모</div>
+          <div> <img src="pic/conan/conan2.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 10기: 탐정들의 잔혼가</div>
+          <div> <img src="pic/conan/conan3.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 18기: 이차원의 저격수</div>
+          <div> <img src="pic/conan/conan4.jpg" alt="Image 4">(더빙) 명탐정 코난 : 진홍의 수학여행</div>
+          <div> <img src="pic/conan/conan5.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 4기: 눈동자속의 암살자</div>
+          <div> <img src="pic/conan/conan6.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 5기: 천국으로의 카운트다운</div>
         </div>
     </div>
     <script src="Slider.js"></script>
     <article>
         <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">
-            글자가 살아 움직인다! 소설 원작 애니메이션 모음
+            시작부터 결말까지 완벽한 용두용미 애니 추천!
         </h3>
 
         <div class="slider">
-            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
-            <div> <img src="pic/ani5.png" alt="Image 5"></div>
-            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
-            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
-            <div> <img src="pic/ani4.jpeg" alt="Image 4"></div>
-            <div> <img src="pic/ani5.png" alt="Image 5"></div>
+            <div> <img src="pic/rec/rec1.jpg" alt="Image 4">쇼와 겐로쿠 라쿠고 심중 -스케로쿠 다시 한번 편-</div>
+            <div> <img src="pic/rec/rec2.jpg" alt="Image 5">(자막) 데스노트 리마스터</div>
+            <div> <img src="pic/rec/rec3.jpg" alt="Image 4">(더빙) 강철의 연금술사</div>
+            <div> <img src="pic/rec/rec4.jpg" alt="Image 4">(자막) 시광대리인 1기</div>
+            <div> <img src="pic/rec/rec5.jpg" alt="Image 4">토라도라</div>
+            <div> <img src="pic/themes/themes4.jpg" alt="Image 5">모브사이코 100 3기</div>
           </div>
     </article>  
     <script>
@@ -113,17 +117,19 @@
         img {
           max-width: 100%;
           height: auto;
+          border-radius: 5px;
         }
         .slider {
           width: 95%;
           margin: 0px auto;
         }
         .slider .slick-slide {
-          margin: 10px;
+          margin: 3px;
         }
         .slick-prev:before, .slick-next:before {
           color: #444444;
         }
       </style>
+      <script src="Days.js"></script>
 </body>
 </html>
