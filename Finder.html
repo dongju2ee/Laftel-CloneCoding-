@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 필터로 보고싶은 애니 찾기</title>
+    <link rel="stylesheet" href="Web.css">
+    <link rel="stylesheet" href="Themes.css">
+    <link rel="stylesheet" href="Finder.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap');
+        a {
+            text-decoration: none; /* 밑줄 제거 */
+            color: inherit; /* 부모 요소의 글씨 색상 상속 */
+        }
+        </style>
+    <div class="header-container">
+        <a href="Main.html"><header>LAFTEL</header></a>
+        <nav class="main-nav">
+            <ul>
+                <li class="tag-search"><a href="/Finder.html">태그검색</a></li>
+                <li><a href="/Daily.html">요일별 신작</a></li>
+                <li class="themes-font"><a href="/Themes.html">테마추천</a></li>
+                <li><a href="/Membership.html">멤버십</a></li>
+                <li class="search"><a href="/search"><i class="fa fa-search"></i></a></li>
+                <li class="login"><a href="/Login.html">로그인/가입</a></li>
+            </ul>
+        </nav> 
+    </div>
+    <hr>
+    <div class="finder-main">
+        <div class="finder"><h1>태그검색</h1>
+        <div class="container">
+            <div class="choose-tap">
+                <h2>필터</h2>
+                <hr style="margin-top: 0px;">
+                <div class="checkbox-container">
+                    <label><input type="checkbox" id="a">감상 가능한 작품만 보기</label>
+                    <label><input type="checkbox" id="b">멤버십 포함된 작품만 보기</label>
+                </div>
+                <hr>
+                <h3>장르</h3>
+                <label><input type="checkbox" id="c">BL</label>
+                <label><input type="checkbox" id="d">GL 백합</label>
+                <label><input type="checkbox" id="e">SF</label>
+                <label><input type="checkbox" id="f">개그</label>
+                <label><input type="checkbox" id="g">공포</label>
+                <label><input type="checkbox" id="h">드라마</label>
+                <label><input type="checkbox" id="i">로맨스</label>
+                <label><input type="checkbox" id="j">모험</label>
+                <label><input type="checkbox" id="k">무협</label>
+                <label><input type="checkbox" id="l">미스터리</label>
+                <hr>
+                <h3>태그</h3>
+                <label><input type="checkbox" id="m">가족</label>
+                <label><input type="checkbox" id="n">감동</label>
+                <label><input type="checkbox" id="o">게임</label>
+                <label><input type="checkbox" id="p">동물</label>
+                <label><input type="checkbox" id="q">동양풍</label>
+                <label><input type="checkbox" id="r">두뇌싸움</label>
+                <label><input type="checkbox" id="s">로봇</label>
+                <label><input type="checkbox" id="t">루프물</label>
+                <label><input type="checkbox" id="u">마법소녀</label>
+                <label><input type="checkbox" id="v">먼치킨</label>
+                <hr>
+                <h3>년도</h3>
+                <label><input type="checkbox" id="w">2024년 3분기</label>
+                <label><input type="checkbox" id="x">2024년 2분기</label>
+                <label><input type="checkbox" id="y">2024년 1분기</label>
+                <label><input type="checkbox" id="z">2023년 4분기</label>
+                <hr>
+                <h3>방영</h3>
+                <label><input type="checkbox" id="A">방영중</label>
+                <label><input type="checkbox" id="B">완결</label>
+                <hr>
+                <h3>출시타입</h3>
+                <label><input type="checkbox" id="C">TVA</label>
+                <label><input type="checkbox" id="D">극장판</label>
+                <label><input type="checkbox" id="E">OVA</label>
+                <hr>
+            </div>
+
+
+            <div class="img-tap">
+                <h3>총 8,099개의 작품이 검색되었어요!</h3>
+                <figure><img src="pic/ani9.jpg"><figcaption>괴수 8호</figcaption></figure>
+                <figure><img src="pic/ani7.jpg"><figcaption>나루토</figcaption></figure>
+                <figure><img src="pic/ani8.jpg"><figcaption>하이큐 1기</figcaption></figure>
+                <figure><img src="pic/ani4.jpeg"><figcaption>나의 히어로 아카데미아 7기</figcaption></figure>
+                <figure><img src="pic/ani5.png"><figcaption>최애의 아이</figcaption></figure>
+                <figure><img src="pic/ani16.jpg"><figcaption>은혼</figcaption></figure>
+                <figure><img src="pic/ani9.jpg"><figcaption>괴수 8호</figcaption></figure>
+                <figure><img src="pic/themes/themes1.jpeg"><figcaption>마슐</figcaption></figure>
+                <figure><img src="pic/themes/themes4.jpg"><figcaption>모브사이코</figcaption></figure>
+                <figure><img src="pic/themes/themes8.jpg"><figcaption>도쿄 리벤져스</figcaption></figure>
+                <figure><img src="pic/themes/themes5.jpg"><figcaption>스파이 패밀리</figcaption></figure>
+                <figure><img src="pic/themes/themes7.jpg"><figcaption>귀멸의 칼날 1기</figcaption></figure>
+                <figure><img src="pic/conan/conan1.jpg"><figcaption>코난</figcaption></figure>
+                <figure><img src="pic/conan/conan5.jpg"><figcaption>코난</figcaption></figure>
+                <figure><img src="pic/rec/rec1.jpg"><figcaption>쇼와 겐로쿠 라쿠고 심중 -스케로쿠 다시 한번 편-</figcaption></figure>
+                <figure><img src="pic/rec/rec2.jpg"><figcaption>(더빙) 데스노트 리마스터</figcaption></figure>
+                <figure><img src="pic/rec/rec3.jpg"><figcaption>(더빙) 강철의 연금술사</figcaption></figure>
+            </div>
+
+
+
+
+
+        </div>
+        
+        
+        
+        
+        
+        </div>
+    </div>
+</body>
+</html>

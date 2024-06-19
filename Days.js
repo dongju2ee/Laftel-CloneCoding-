@@ -9,19 +9,19 @@
                 { src: 'pic/ani13.jpg', alt: 'Image 4', title: '사신 도렴님과 검은 메이드' }
             ],
             tue: [
-                { src: 'pic/ani14.jpg', alt: 'Image 1', title: '귀멸의 칼날: 합동 강화 훈련편' },
-                { src: 'pic/ani14.jpg', alt: 'Image 2', title: '전생 귀족, 감정 스킬로 성공하다' },
-                { src: 'pic/ani14.jpg', alt: 'Image 3', title: '달이 이끄는 이세계 여행 제2막' },
-                { src: 'pic/ani14.jpg', alt: 'Image 4', title: '바텐더 신의 글라스' },
-                { src: 'pic/ani14.jpg', alt: 'Image 5', title: '무직전생 ~이세계에 갔으면 최선을 다한다~' }
+                { src: 'pic/ani6.jpg', alt: 'Image 1', title: '귀멸의 칼날: 합동 강화 훈련편' },
+                { src: 'pic/daily/da1.jpg', alt: 'Image 2', title: '무직전쟁 2 ~ 이세계에 갔으면 최선을 다한다 ~' },
+                { src: 'pic/daily/da2.jpg', alt: 'Image 3', title: '전생 귀족, 감정 스킬로 성공하다' },
+                { src: 'pic/daily/da3.jpg', alt: 'Image 4', title: 'Lv2부터 치트였던 전직 용사후보의 유유자적 이세계 ...' },
+                { src: 'pic/ani5.png', alt: 'Image 5', title: '최애의 아이' }
             ],
             wed: [
-                { src: 'pic/conan/conan1.jpg', alt: 'Image 1', title: '(자막) NANA -나나-' },
-                { src: 'pic/conan/conan2.jpg', alt: 'Image 2', title: '하나노이 군과 상사병' },
-                { src: 'pic/conan/conan3.jpg', alt: 'Image 3', title: '우에키의 법칙(배틀짱)' },
-                { src: 'pic/conan/conan4.jpg', alt: 'Image 4', title: '할아버지 할머니 회춘하다' },
-                { src: 'pic/conan/conan5.jpg', alt: 'Image 5', title: '신은 유희에 굶주려있다.' },
-                { src: 'pic/conan/conan5.jpg', alt: 'Image 5', title: '코드네임 X.' }
+                { src: 'pic//ani15.jpg', alt: 'Image 1', title: '(자막) NANA -나나-' },
+                { src: 'pic/daily/da4.jpg', alt: 'Image 2', title: '하나노이 군과 상사병' },
+                { src: 'pic/themes/themes8.jpg', alt: 'Image 3', title: '도쿄 리벤져스' },
+                { src: 'pic/themes/themes9.jpg', alt: 'Image 4', title: '러브 라이브! 1기' },
+                { src: 'pic/themes/themes5.jpg', alt: 'Image 5', title: '스파이 패밀리' },
+                { src: 'pic/themes/themes6.jpg', alt: 'Image 5', title: '천재 왕자의 적자국가 재생술' }
             ],
             thu: [
 
@@ -34,7 +34,7 @@
 
             ],
             sun: [
-                
+
             ]    
         };
 

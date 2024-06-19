@@ -1,0 +1,64 @@
+.tag-search a {
+    color: mediumpurple
+}
+.finder h1 {
+    margin-left: 60px;
+    margin-top: 30px;
+    font-style: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 2.5rem;
+}
+.container {
+    display: flex;
+}
+.choose-tap {
+    margin-left: 60px;
+    width: 17vw;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: none;
+    height: 800px; /* 원하는 높이로 설정 */
+    width: 60vw;
+
+}
+.choose-tap h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.choose-tap h2 {
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.choose-tap label {
+    display: block;  /* 세로로 정렬 */
+    margin: 5px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.choose-tap input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    height: 20px;
+    margin-top: 30px;
+}
+.img-tap {
+    margin-left: 55px;
+
+}
+.img-tap h3 {
+    font-weight: 500;
+    margin-left: 7px;
+}
+.img-tap img {
+    width: 14vw;
+    border-radius: 5px;
+}
+.img-tap figure {
+    display: inline-block;
+    width: 17%;
+    margin: 13px; /* 이미지 간의 간격 조정 */
+    text-align: center;
+    height: auto;
+    padding-top: 50px;
+}

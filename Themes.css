@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.themes-rec a {
+    color: mediumpurple
+}
 hr {
     margin-top: 70px;
     border:0;
