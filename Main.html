@@ -32,11 +32,26 @@
                 <li><a href="/Daily.html">요일별 신작</a></li>
                 <li><a href="/Themes.html">테마추천</a></li>
                 <li><a href="/Membership.html">멤버십</a></li>
-                <li class="search"><a href="/search"><i class="fa fa-search"></i></a></li>
+                <li class="search" id="uploadNoticeBtn2"><a><i class="fa fa-search"></i></a></li>
                 <li class="login"><a href="/Login.html">로그인/가입</a></li>
             </ul>
         </nav> 
     </div>
+    <div id="searchModal" class="modal2">
+      <div class="modal-content2">
+          <p>지금 사람들이 많이 보는 작품 </p>
+          <li>1 귀멸의 칼날: 합동 강화 훈련편</li>
+          <li>2 윈브레 -WINBRE-</li>
+          <li>3 (자막) 괴수 8호</li>
+          <li>4 달이 이끄는 이세계 여행 제2막</li>
+          <li>5 무직전생 ~이세계에 갔으면 최선을 ...</li>
+          <li>6 환생했는데 제7왕자라 내맘대로 ...</li>
+          <li>7 Lv2부터 치트였던 전직 용사 ...</li>
+          <li>8 전생했더니 슬라임이었던 건에 ...</li>
+          <li>9 전생 귀족, 감정 스킬로 성공하다</li>
+          <li>10 (자막) NANA -나나-</li>
+      </div>
+  </div>
     <main>
         <div class="slider-anime">
             <div class="slide"><img src="pic/ani1.jpg" alt="Image 1"></div>
@@ -46,7 +61,7 @@
     </main>
     
     <article>
-        <div class="days"><h3>요일별 신작</h3> <button>업로드 공지</button></div>
+        <div class="days"><h3>요일별 신작</h3> <button id="uploadNoticeBtn">업로드 공지</button></div>
         <div class="day"><button id="mon">월</button>
             <button id="tue">화</button>
             <button id="wed">수</button>
@@ -57,19 +72,38 @@
             <div id="image-container" style="margin-top: 30px; padding-left: 5px;">
           </div>
         </div>
-       <div style="margin-top: 100px;">
-        <img src="pic/label.png">
-       </div>
+        <div>
+          <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">스토리맛집, 연출맛집! ONE선생님 원작 애니메이션</h3>    
+          <div class="slider">
+            <div class="slide-"> <img src="pic/ani17.jpg" alt="Image 4">원펀맨</div>
+            <div class="slide-"> <img src="pic/ani18.jpg" alt="Image 5">모브사이코 100 : 마음을 채우는 힐링 여행</div>
+            <div class="slide-"> <img src="pic/themes/themes4.jpg" alt="Image 4">모브사이코 100 3기</div>
+            <div class="slide-"> <img src="pic/ani19.jpg" alt="Image 4">모브사이코100 특별전 [REIGEN~알려지지 않은 기적의 영능력자~]</div>
+            <div class="slide-"> <img src="pic/ani20.jpg" alt="Image 4">모브사이코 100 1기 - 판권 부활</div>
+            <div class="slide-"> <img src="pic/ani21.jpg" alt="Image 5">원펀맨 2기</div>
+          </div>
+      </div>    
     </article>
+    <div class="label-main">
+      <img src="pic/label.png" class="label-img">
+    </div>
+    <div id="uploadModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>업로드 공지</h2>
+          <li>새로운 공지가 없습니다.</li>
+      </div>
+  </div>
+
     <div>
         <h3 class="day-Anime" style="margin-top: 30px; padding-left: 15px;">몸은 사라져도 머리는 그대로! - 명탐정 코난 자막 모음</h3>    
         <div class="slider">
-          <div> <img src="pic/conan/conan1.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 9기: 수평선상의 음모</div>
-          <div> <img src="pic/conan/conan2.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 10기: 탐정들의 잔혼가</div>
-          <div> <img src="pic/conan/conan3.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 18기: 이차원의 저격수</div>
-          <div> <img src="pic/conan/conan4.jpg" alt="Image 4">(더빙) 명탐정 코난 : 진홍의 수학여행</div>
-          <div> <img src="pic/conan/conan5.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 4기: 눈동자속의 암살자</div>
-          <div> <img src="pic/conan/conan6.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 5기: 천국으로의 카운트다운</div>
+          <div class="slide-"> <img src="pic/conan/conan1.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 9기: 수평선상의 음모</div>
+          <div class="slide-"> <img src="pic/conan/conan2.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 10기: 탐정들의 잔혼가</div>
+          <div class="slide-"> <img src="pic/conan/conan3.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 18기: 이차원의 저격수</div>
+          <div class="slide-"> <img src="pic/conan/conan4.jpg" alt="Image 4">(더빙) 명탐정 코난 : 진홍의 수학여행</div>
+          <div class="slide-"> <img src="pic/conan/conan5.jpg" alt="Image 4">(더빙) 극장판 명탐정 코난 4기: 눈동자속의 암살자</div>
+          <div class="slide-"> <img src="pic/conan/conan6.jpg" alt="Image 5">(더빙) 극장판 명탐정 코난 5기: 천국으로의 카운트다운</div>
         </div>
     </div>
     <script src="Slider.js"></script>
@@ -79,12 +113,12 @@
         </h3>
 
         <div class="slider">
-            <div> <img src="pic/rec/rec1.jpg" alt="Image 4">쇼와 겐로쿠 라쿠고 심중 -스케로쿠 다시 한번 편-</div>
-            <div> <img src="pic/rec/rec2.jpg" alt="Image 5">(자막) 데스노트 리마스터</div>
-            <div> <img src="pic/rec/rec3.jpg" alt="Image 4">(더빙) 강철의 연금술사</div>
-            <div> <img src="pic/rec/rec4.jpg" alt="Image 4">(자막) 시광대리인 1기</div>
-            <div> <img src="pic/rec/rec5.jpg" alt="Image 4">토라도라</div>
-            <div> <img src="pic/themes/themes4.jpg" alt="Image 5">모브사이코 100 3기</div>
+            <div class="slide-"> <img src="pic/rec/rec1.jpg" alt="Image 4">쇼와 겐로쿠 라쿠고 심중 -스케로쿠 다시 한번 편-</div>
+            <div class="slide-"> <img src="pic/rec/rec2.jpg" alt="Image 5">(자막) 데스노트 리마스터</div>
+            <div class="slide-"> <img src="pic/rec/rec3.jpg" alt="Image 4">(더빙) 강철의 연금술사</div>
+            <div class="slide-"> <img src="pic/rec/rec4.jpg" alt="Image 4">(자막) 시광대리인 1기</div>
+            <div class="slide-"> <img src="pic/rec/rec5.jpg" alt="Image 4">토라도라</div>
+            <div class="slide-"> <img src="pic/themes/themes4.jpg" alt="Image 5">모브사이코 100 3기</div>
           </div>
     </article>  
     <script>
@@ -93,7 +127,7 @@
             // autoplay: true,
             autoplaySpeed: 1000,
             slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             responsive: [
               {
                 breakpoint: 768,
@@ -114,22 +148,13 @@
         } );
       </script>
       <style>
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 5px;
-        }
-        .slider {
-          width: 95%;
-          margin: 0px auto;
-        }
-        .slider .slick-slide {
-          margin: 3px;
-        }
+
+
         .slick-prev:before, .slick-next:before {
           color: #444444;
         }
       </style>
       <script src="Days.js"></script>
+      <script src="Modal.js"></script>
 </body>
 </html>

@@ -32,10 +32,10 @@
     display: block;
 }
 
-.membership {
+.membership { 
     color: white;
     text-align: center;
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 3s ease-out forwards;
     opacity: 0; /* 시작할 때 투명도 0으로 설정 */
 }
 .membership h1 {
@@ -64,6 +64,7 @@
     margin: 20px auto;
     overflow: hidden;
     display: flex;
+    padding-top: 100px;
 }
 
 .slider-wrapper {
@@ -100,7 +101,8 @@
     margin-left: 200px;
     padding-top: 200px;
     display: flex;
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 2s ease-out forwards;
+    transform: translateY(20px); /* 살짝 아래에서 시작 */
     opacity: 0; /* 시작할 때 투명도 0으로 설정 */
 }
 .A h1 {
@@ -155,4 +157,33 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 50px;
+}
+.B {
+    color: white;
+    margin-left: 200px;
+    padding-top: 200px;
+    display: flex;
+    animation: fadeInUp 2s ease-out forwards;
+    transform: translateY(20px); /* 살짝 아래에서 시작 */
+    opacity: 0; /* 시작할 때 투명도 0으로 설정 */
+    text-align: right;
+    margin-right: 200px;
+}
+.B h1 {
+    margin-top: 70px;
+    font-size: 3rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.B h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
+}
+.B img {
+    width: 37vw;
+
+}
+.B .text-content {
+    flex: 1;
+    margin-left: 150px;
 }

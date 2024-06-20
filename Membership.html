@@ -83,10 +83,46 @@
             </div>
 
             <div class="B">
-                
+                <div class="image-content">
+                    <img src="pic/B.png" alt="Example Image">
+                </div>
+                <div class="text-content">
+                    <h1>TV에서 웅장하게 감상하세요</h1>
+                    <h3>스마트 TV, 크롬캐스트 등 큰 화면에서</h3>
+                    <h3>최애 애니를 몰입해서 즐겨보세요.</h3>
+                </div>
             </div>
 
         </div>
         <script src="Swiper.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer 콜백 함수
+            function callback(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fadeInUp');
+                        // 애니메이션이 완료된 후 클래스 제거
+                        setTimeout(() => {
+                            entry.target.classList.remove('fadeInUp');
+                        }, 1000); // 애니메이션 지속 시간과 동일하게 설정
+                    }
+                });
+            }
+        
+            // Intersection Observer 설정
+            let options = {
+                threshold: 0.1 // 요소의 10%가 보일 때 콜백 실행
+            };
+            let observer = new IntersectionObserver(callback, options);
+        
+            // 애니메이션을 적용할 요소 관찰 시작
+            let elements = document.querySelectorAll('.A');
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        </script>
 </body>
 </html>
