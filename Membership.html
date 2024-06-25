@@ -18,6 +18,25 @@
             text-decoration: none; /* 밑줄 제거 */
             color: inherit; /* 부모 요소의 글씨 색상 상속 */
         }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* 아래에서 시작 */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* 원래 위치로 */
+            }
+        }
+
+        .fadeInUp {
+            animation: fadeInUp 2s ease-out forwards; /* 애니메이션 시간과 설정 */
+        }
+
+        .A, .B {
+            opacity: 0; /* 시작할 때 투명도 0으로 설정 */
+            transform: translateY(20px); /* 살짝 아래에서 시작 */
+        }
         </style>
         <div class="header-container">
             <a href="Main.html"><header>LAFTEL</header></a>
@@ -95,34 +114,34 @@
 
         </div>
         <script src="Swiper.js"></script>
-        <script>
-
-            document.addEventListener('DOMContentLoaded', function() {
+        <script src="Swiper.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
             // Intersection Observer 콜백 함수
             function callback(entries, observer) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('fadeInUp');
-                        // 애니메이션이 완료된 후 클래스 제거
-                        setTimeout(() => {
-                            entry.target.classList.remove('fadeInUp');
-                        }, 1000); // 애니메이션 지속 시간과 동일하게 설정
+                    } else {
+                        entry.target.classList.remove('fadeInUp');
                     }
                 });
             }
-        
+
             // Intersection Observer 설정
             let options = {
                 threshold: 0.1 // 요소의 10%가 보일 때 콜백 실행
             };
             let observer = new IntersectionObserver(callback, options);
-        
+
             // 애니메이션을 적용할 요소 관찰 시작
-            let elements = document.querySelectorAll('.A');
+            let elements = document.querySelectorAll('.membership, .A, .B');
             elements.forEach(element => {
                 observer.observe(element);
             });
         });
-        </script>
+    </script>
+
+        
 </body>
 </html>
