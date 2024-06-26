@@ -29,17 +29,26 @@
 ### 메인 페이지
 
 ![2024-06-24222932-ezgif com-video-to-gif-converter](https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/52a98d88-4778-4971-8436-d67d7a5525c9)
-<!-- ![스크린샷 2024-06-25 164043](https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/46791c51-ffc6-45d2-af8a-83606466b3b3) -->
-<img src="https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/46791c51-ffc6-45d2-af8a-83606466b3b3" width="600" height="300"/>
 
 gif 파일입니다
 - 3초마다 자동으로 슬라이드가 전환되는 Js 코드를 구현
 - css의 `opacity`와 `transition` 속성을 사용하여 세 개의 이미지가 부드럽게 전환
+<br/><br/>
+
+<!-- ![스크린샷 2024-06-25 164043](https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/46791c51-ffc6-45d2-af8a-83606466b3b3) -->
+<img src="https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/46791c51-ffc6-45d2-af8a-83606466b3b3" width="600" height="300"/>
+
 - 각 요일의 버튼을 클릭하면 해당 요일의 신작을 확인할 수 있고, 선택된 요일 버튼은 색상이 변하여 시각적으로 강조
 -  jQuery, Slick Carousel을 이용하여 5개의 이미지가 보이는 슬라이드 쇼를 구현
 - 양옆에 버튼을 추가하여 여러 이미지를 쉽게 볼 수 있음
 - `slidesToShow`, `slidesToScroll`, `autoplay`, `autoplaySpeed` 등의 옵션을 JavaScript 객체로 지정하여 슬라이드의 동작 방식을 제어
 - `responsive` 속성을 사용해 반응형 설정을 추가
+
+<img src="https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/a5696f14-0a85-45d3-ae65-953db0d64427" width="600" height="300"/>
+
+- Modal.js를 구현하여 "업로드 공지" 버튼을 누르면 공지가 화면 가운데에 뜸
+
+
 
 ### 태그검색 페이지
 <!-- ![스크린샷 2024-06-25 164412](https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/e814df07-04ca-4d37-bac8-5b7f1a85cb03) -->
