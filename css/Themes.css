@@ -23,7 +23,7 @@ hr {
 }
 .themes-pic {
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: -20px;
     display: flex;
     justify-content: center;
 }
@@ -31,15 +31,18 @@ hr {
     width: 25vw;
     height: 30vh;
     border-radius: 5px;
+    margin-bottom: -10px;
 }
 .themes-pic figcaption {
-    width: 100%;
     word-wrap: break-word;
     box-sizing: border-box;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
+   
+}
+.themes-pic p {
+    margin-top: 0px;
 }
 figure {
     width: 25vw; /* 이미지와 같은 너비로 설정 */
@@ -47,4 +50,32 @@ figure {
     display: inline-block; /* figure들을 인라인 블록으로 설정 */
     vertical-align: top; /* figure들이 상단에 정렬되도록 설정 */
     height: 50vh;
+    font-family: "Noto Sans KR", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 992px) { /* 반 */
+
+    .themes-main h1 {
+        margin-left: 10px;
+    }
+    .themes-pic {
+        margin-top: 0px; 
+        margin-bottom: -50px;
+        display: flex;
+        justify-content: left;
+    }
+    .themes-pic img {
+        width: 31vw;
+        height: 22vh;
+    }
+    figure {
+        margin-right: 3px; 
+        width: 31vw;
+        
+    }
+    .themes-pic h2 {
+        font-size: 1.2rem;
+    }
+    .themes-pic figcaption {
+        max-width: 100%;
+    }
 }

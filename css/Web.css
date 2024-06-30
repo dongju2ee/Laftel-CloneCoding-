@@ -210,13 +210,15 @@ nav ul li a:hover {
 
     .days button {
         width: 10vw;
-        height: 5vh;
+        height: 4vh;
     }
 
     .day button {
-        width: 4vw;
+        width: 5vw;
         height: 5vh;
         font-size: 1rem;
+        font-weight: bold;
+        color: white;
     }
 }
 

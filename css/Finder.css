@@ -62,3 +62,25 @@
     height: auto;
     padding-top: 50px;
 }
+@media (min-width: 768px) and (max-width: 992px) { /* 반 */
+    .choose-tap {
+        width: 150vw;
+    
+    }
+    .img-tap {
+        margin-left: 5px;
+    
+    }
+    .img-tap figure {
+        display: inline-block;
+        width: 30%;
+        margin: 7px; /* 이미지 간의 간격 조정 */
+        text-align: center;
+        height: auto;
+        padding-top: 50px;
+    }
+    .img-tap img {
+        width: 21vw;
+        border-radius: 5px;
+    }
+}
