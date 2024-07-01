@@ -31,7 +31,7 @@
 
 <!-- ![2024-06-24222932-ezgif com-video-to-gif-converter](https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/52a98d88-4778-4971-8436-d67d7a5525c9) -->
 <img src="https://github.com/dongju2ee/Laftel_CloneCoding/assets/171718522/52a98d88-4778-4971-8436-d67d7a5525c9" width="800" height="350"/>
-<br/><br/>
+
 gif 파일입니다
 - 3초마다 자동으로 슬라이드가 전환되는 JavaScript 코드를 구현
 - CSS의 `opacity`와 `transition` 속성을 사용하여 세 개의 이미지가 부드럽게 전환 
